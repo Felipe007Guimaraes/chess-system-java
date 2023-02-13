@@ -7,12 +7,12 @@ public class Board {
     private int rows;
     private Piece [][] pieces;
 
-    public Board (int columns, int rows){
+    public Board (int rows, int columns){
         if (rows<1 || columns < 1){throw new BoardException("Error creating board: number of rows and columns not compatible");
         }
         this.columns = columns;
         this.rows = rows;
-        pieces = new Piece[columns][rows];
+        pieces = new Piece[rows][columns];
     }
 
     public int getColumns(){
@@ -23,7 +23,7 @@ public class Board {
         return rows;
     }
 
-    public Piece piece(int column, int row){
+    public Piece piece(int row, int column){
         if(!positionExists(row,column)){
             throw new BoardException("Position not on the board");
         }
@@ -55,7 +55,7 @@ public class Board {
 
     public boolean thereIsAPiece(Position position){
         if(!positionExists(position)){
-            throw new BoardException("Position not on the board");
+            throw new BoardException("Position not on the board"+position);
         }
         return piece(position) != null;
     }
