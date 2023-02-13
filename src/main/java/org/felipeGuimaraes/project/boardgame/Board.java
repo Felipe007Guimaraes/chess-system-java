@@ -1,4 +1,4 @@
-package org.felipeGuimaraes.project.Boardgame;
+package org.felipeGuimaraes.project.boardgame;
 
 public class Board {
     private int columns;
@@ -33,5 +33,10 @@ public class Board {
 
     public Piece piece(Position position){
         return pieces [position.getRow()][position.getColumn()];
+    }
+
+    public void placePiece(Piece piece, Position position){
+        pieces[position.getRow()][position.getColumn()] = piece;
+        piece.position = position;
     }
 }

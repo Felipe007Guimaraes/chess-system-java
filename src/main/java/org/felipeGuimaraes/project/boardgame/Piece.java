@@ -1,4 +1,4 @@
-package org.felipeGuimaraes.project.Boardgame;
+package org.felipeGuimaraes.project.boardgame;
 
 public class Piece {
     protected Position position;
