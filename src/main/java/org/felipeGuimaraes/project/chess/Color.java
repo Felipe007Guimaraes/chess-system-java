@@ -1,4 +1,4 @@
-package org.felipeGuimaraes.project.Chess;
+package org.felipeGuimaraes.project.chess;
 
 public enum Color {
     BLACK,

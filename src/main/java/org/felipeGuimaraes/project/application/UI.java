@@ -1,6 +1,6 @@
-package org.felipeGuimaraes.project.Application;
+package org.felipeGuimaraes.project.application;
 
-import org.felipeGuimaraes.project.Chess.ChessPiece;
+import org.felipeGuimaraes.project.chess.ChessPiece;
 
 public class UI {
     public static void printBoard(ChessPiece[][] pieces){

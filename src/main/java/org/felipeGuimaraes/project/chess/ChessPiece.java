@@ -1,7 +1,7 @@
-package org.felipeGuimaraes.project.Chess;
+package org.felipeGuimaraes.project.chess;
 
-import org.felipeGuimaraes.project.Boardgame.Board;
-import org.felipeGuimaraes.project.Boardgame.Piece;
+import org.felipeGuimaraes.project.boardgame.Board;
+import org.felipeGuimaraes.project.boardgame.Piece;
 
 public class ChessPiece extends Piece {
     private Color color;
