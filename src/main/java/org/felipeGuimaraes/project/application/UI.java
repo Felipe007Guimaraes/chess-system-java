@@ -1,5 +1,6 @@
 package org.felipeGuimaraes.project.application;
 
+import org.felipeGuimaraes.project.chess.ChessMatch;
 import org.felipeGuimaraes.project.chess.ChessPiece;
 import org.felipeGuimaraes.project.chess.ChessPosition;
 import org.felipeGuimaraes.project.chess.Color;
@@ -46,6 +47,13 @@ public class UI {
         catch (RuntimeException e) {
             throw new InputMismatchException("Error reading ChessPosition. Valid values are from a1 to h8.");
         }
+    }
+
+    public static void printMatch(ChessMatch chessMatch){
+        printBoard(chessMatch.getPieces());
+        System.out.println();
+        System.out.println("Turn: " + chessMatch.getTurn());
+        System.out.println("Waiting player: " + chessMatch.getCurrentPlayer());
     }
 
     public static void printBoard(ChessPiece[][] pieces){
